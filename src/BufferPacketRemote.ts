@@ -1,7 +1,7 @@
 import type { GenericPacketDefinition } from "./PacketList";
 import { Players, RunService } from "@rbxts/services";
 import { t } from "@rbxts/t";
-import { IBufferPacketType, IBasePacket, EPacketReliability } from ".";
+import { IBufferPacketType, IBasePacket, EPacketReliability } from "./BufferTypes";
 
 let RemotesFolder = script?.FindFirstChild("Remotes") as Folder;
 

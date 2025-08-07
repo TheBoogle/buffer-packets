@@ -7,7 +7,7 @@ import {
 	Server,
 	IServerPacket,
 	IDiscriminatedBufferPacket,
-} from ".";
+} from "./BufferTypes";
 import type { BufferPacketDefinition, DiscriminatedBufferPacketDefinition } from "./BufferPacket";
 import { PacketRuntime } from "./BufferPacketRemote";
 import { Object } from "@rbxts/jsnatives";

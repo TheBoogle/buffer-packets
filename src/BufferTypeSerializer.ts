@@ -3,7 +3,7 @@
 import { Obfuscator } from "./Obfuscator";
 import { HttpService } from "@rbxts/services";
 import { BufferHelper } from "./BufferHelper";
-import { EBufferType, BufferTypeForArray, IBufferTypeMap } from ".";
+import { EBufferType, BufferTypeForArray, IBufferTypeMap } from "./BufferTypes";
 import { t } from "@rbxts/t";
 import zlib from "@rbxts/zlib";
 import { HexHelper } from "./HexHelper";

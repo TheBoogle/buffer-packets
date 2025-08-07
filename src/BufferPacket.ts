@@ -8,7 +8,7 @@ import {
 	EPacketReliability,
 	BufferTypeFor,
 	IDiscriminatedBufferPacket,
-} from ".";
+} from "./BufferTypes";
 import { HexHelper } from "./HexHelper";
 
 export class BufferPacketDefinition<
