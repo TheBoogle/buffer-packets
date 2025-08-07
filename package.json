@@ -1,0 +1,41 @@
+{
+  "name": "@rbxts/buffer-packets",
+  "version": "1.0.0",
+  "main": "out/init.lua",
+  "scripts": {
+	"prepare": "npm run build",
+    "build": "rbxtsc",
+    "watch": "rbxtsc -w",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "types": "out/index.d.ts",
+  "files": [
+    "out",
+    "!**/*.tsbuildinfo"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@rbxts/compiler-types": "^3.0.0-types.0",
+    "@rbxts/types": "^1.0.868",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-roblox-ts": "^1.0.0",
+    "prettier": "^3.6.2",
+    "roblox-ts": "^3.0.0",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@rbxts/jsnatives": "^1.1.5",
+    "@rbxts/t": "^3.2.1",
+    "@rbxts/zlib": "^1.0.1"
+  }
+}
