@@ -9,6 +9,12 @@ export abstract class Obfuscator {
 			Bytes.push(DataByte ^ KeyByte);
 		}
 
-		return string.char(...Bytes);
+		let Output = "";
+
+		for (const Byte of Bytes) {
+			Output += string.char(Byte);
+		}
+
+		return Output;
 	}
 }
