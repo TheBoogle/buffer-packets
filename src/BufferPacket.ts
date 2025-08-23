@@ -15,7 +15,7 @@ export class BufferPacketDefinition<
 	Mode extends RemoteMode,
 	SerializedType extends IBufferPacketType = IBufferPacketType,
 > {
-	public static readonly UntrimmedBufferSize = 4096;
+	public static readonly UntrimmedBufferSize = 4 * 1e6;
 
 	protected readonly Headers: Partial<TypedBufferMap<SerializedType["Headers"]>> = {};
 	protected readonly DataKeys: Partial<TypedBufferMap<SerializedType["Data"]>> = {};
